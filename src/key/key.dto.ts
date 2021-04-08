@@ -1,5 +1,5 @@
 export class KeyDto {
-    id: number
-    event: string
-    timestamp: Date
+  id: number;
+  event: string;
+  timestamp: Date;
 }
