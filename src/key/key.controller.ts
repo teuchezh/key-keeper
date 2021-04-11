@@ -6,9 +6,15 @@ import { KeyDto } from './key.dto';
 export class KeyController {
   constructor(public keyService: KeyService) {}
 
+
   @Get()
-  getStatus() {
+  async getStatus() {
     return this.keyService.getStatus();
+  }
+
+  @Get()
+  async getStats() {
+    return this.keyService.getStats();
   }
 
   @Post('/update')
